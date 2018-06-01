@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <link rel="stylesheet" href="css/base_c.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jQuery/jquery1.42.min.js"></script>
+    <script src="lib/jQuery/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="lib/common.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<!--首页内容-->
+<!--头部-->
+<div class="top">
+    <div class="w">
+        <div class="left">
+            欢迎光临湖南天地融节能环保科技有限公司！
+        </div>
+        <div class="right">
+            <a href="###" style="cursor: inherit;"><img src="images/index_03.png" alt=""></a>
+            <a href="###" style="cursor: inherit;">40000-99990</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a href="#" class="log"><img src="images/index_07.png" alt=""></a>
+        <div class="nav">
+            <ul class="nav_first clearFix">
+
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir">
+                    <a href="#">产品名称</a>
+                    <ul>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                    </ul>
+                </li>
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir"><a href="#">案例展示</a></li>
+                <li class="fir"><a href="#">关于我们</a></li>
+                <li class="fir"><a href="#">关于我们</a>
+                    <ul>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav_hide">
+    <div class="w">
+        <ul>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.nav_hide').hide();
+        $('.nav_first li.fir').find('span').css("display","none");
+        $('.nav_first li.fir').eq(0).find('span').css("display","block");
+        $('.nav_first li.fir').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $(this).find('span').css("display","block");
+            $('.nav_hide').stop().hide()
+        })
+            .mouseleave(function () {
+                $('.nav_first li.fir').find('span').css("display","none");
+                $('.nav_first li.fir').eq(0).find('span').css("display","block");
+            })
+        $('.nav_first li.fir').eq(2).mouseenter(function () {
+            $(this).find('ul').css('display','none');
+            $('.nav_hide').stop().show();
+
+        })
+        $('.nav_hide').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $('.nav_first li.fir').eq(2).find('span').css("display","block");
+        })
+        $('.nav_hide').mouseleave(function () {
+            $('.nav_hide').stop().hide();
+        })
+
+
+    })
+</script>
+<!--banner-->
+<div class="banner_about" style="background:url(images/pro_banner_02.png);">
+    <div class="w">
+
+    </div>
+</div>
+<div class="search">
+    <div class="w">
+        <div class="left">
+            <span style="color: #333;font-size:16px;">热门关键词：</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+        </div>
+        <div class="right">
+            <form  name="formSeach" id="formSeach" action="/seach/" onSubmit="Seach()">
+                <input type="text" name="k" size="25" class="cpkey" value="请输入关键词搜索"/>
+                <input type="image" class="image" onClick="doAdvancedSearchSubmit('')" value="" src="images/index_17.png" align="top" >
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="about_content clearFix">
+    <div class="w">
+        <div class="left_type">
+            <div class="l_t">
+                <div class="text_t">产品中心</div>
+                <div class="text_b"><span></span>PRODUCT CENTER<span></span></div>
+            </div>
+            <ul class="type">
+                <li class="clearFix"><a href="#"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a></li>
+                <li class="clearFix">
+                    <a href="#" class="clearFix"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a>
+                    <div class="sub_pro">
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                    </div>
+                </li>
+                <li class="clearFix"><a href="#"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a></li>
+            </ul>
+            <div class="concat_b">
+                <div class="name_t">
+                     联系我们
+                    <div class="text_b"><span></span>CONCAT US<span></span></div>
+                </div>
+                <div class="content_b">
+                    <p>联系人: 陈经理</p>
+                    <p>手机: 15995250526</p>
+                    <p>电话: 0510-83390359</p>
+                    <p>传真: 0510-83390359</p>
+                    <p>邮箱: 419309846@qq.com</p>
+                    <p>地址: 无锡市前洲工业园无锡市前洲工业园无锡市前洲工业园无锡市前洲工业园</p>
+                </div>
+            </div>
+        </div>
+        <div class="right_lists">
+            <div class="top_pro">
+                <img src="images/home_05.png" alt="">&nbsp;<a href="">首页>产品中心</a>
+            </div>
+            <div class="pro_item clearFix">
+                <div class="right_center">
+
+                    <div class="mod18Box">
+                        <div class="mod18">
+                            <span id="prev" class="btn prev" style="display:none;"></span>
+                            <span id="next" class="btn next" style="display:none;"></span>
+                            <span id="prevTop" class="btn prev"> < </span>
+                            <span id="nextTop" class="btn next"> > </span>
+                            <div id="picBox" class="picBox">
+                                <ul class="cf">
+                                    <!--{zsoimg:img(row='all')}-->
+                                    <li>
+                                        <a><img src="images/index_24.png" alt="产品" title="产品" /></a>
+                                    </li>
+                                    <li>
+                                        <a><img src="images/index_24.png" alt="产品" title="产品" /></a>
+                                    </li>
+                                    <li>
+                                        <a><img src="images/index_24.png" alt="产品" title="产品" /></a>
+                                    </li>
+                                    <li>
+                                        <a><img src="images/index_24.png" alt="产品" title="产品" /></a>
+                                    </li>
+                                    <li>
+                                        <a><img src="images/index_24.png" alt="产品" title="产品" /></a>
+                                    </li>
+                                    <!--{/zsoimg:img}-->
+                                </ul>
+                            </div>
+                            <div id="listBox" class="listBox">
+                                <ul class="cf">
+                                    <li><i class="arr2"></i><img width="96" height="73" src="" alt="" /></li>
+                                    <li><i class="arr2"></i><img width="96" height="73" src="" alt="" /></li>
+                                    <li><i class="arr2"></i><img width="96" height="73" src="" alt="" /></li>
+                                    <li><i class="arr2"></i><img width="96" height="73" src="" alt="" /></li>
+                                    <li><i class="arr2"></i><img width="96" height="73" src="" alt="" /></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(".pro_list li:nth-child(3n)").css("margin-right","6px");
+                    </script>
+                    <script type="text/javascript">
+                        $(".cf li:eq(0)").attr("class","on");
+                        var big1=$(".picBox li:eq(0) img").attr("src");
+                        var big2=$(".picBox li:eq(1) img").attr("src");
+                        var big3=$(".picBox li:eq(2) img").attr("src");
+                        var big4=$(".picBox li:eq(3) img").attr("src");
+                        var big5=$(".picBox li:eq(4) img").attr("src");
+
+                        $("#listBox li:eq(0) img").attr("src",big1);
+                        $("#listBox li:eq(1) img").attr("src",big2);
+                        $("#listBox li:eq(2) img").attr("src",big3);
+                        $("#listBox li:eq(3) img").attr("src",big4);
+                        $("#listBox li:eq(4) img").attr("src",big5);
+                    </script>
+                    <script src="lib/jQuery/pro_con.js" type="text/javascript"></script>
+                </div>
+
+                <div class="pro_message">
+                    <div class="name">
+                        产品名称: <span>DSH 双螺旋锥形混合机</span>
+                    </div>
+                    <div class="tedian">
+                        [yyfw]
+
+
+
+                        产品特点：
+                        1、具备对混合物料放料无残留的高标准要求。
+                        2、柔和的搅拌方式不破坏易碎物料如晶体料。
+                        3、低能耗的搅拌效果更适用物料的化学反应。
+                        4、上盖圆弧结构避免卫生清理死角。
+                        5、搭载球面出料阀，出料更
+                        1、具备对混合物料放料无残留的高标准要求。
+                        2、柔和的搅拌方式不破坏易碎物料如晶体料。
+                        3、低能耗的搅拌效果更适用物料的化学反应。
+                        4、上盖圆弧结构避免卫生清理死角。
+                        5、搭载球面出料阀，出料更彻
+                        1、具备对混合物料放料无残留的高标准要求。
+                        2、柔和的搅拌方式不破坏易碎物料如晶体料。
+                        3、低能耗的搅拌效果更适用物料的化学反应。
+                        4、上盖圆弧结构避免卫生清理死角。
+                        5、搭载球面出料阀，出料更彻
+                        1、具备对混合物料放料无残留的高标准要求。
+                        2、柔和的搅拌方式不破坏易碎物料如晶体料。
+                        3、低能耗的搅拌效果更适用物料的化学反应。
+                        4、上盖圆弧结构避免卫生清理死角。
+                        5、搭载球面出料阀，出料更彻
+                        1、具备对混合物料放料无残留的高标准要求。
+                        2、柔和的搅拌方式不破坏易碎物料如晶体料。
+                        3、低能耗的搅拌效果更适用物料的化学反应。
+                        4、上盖圆弧结构避免卫生清理死角。
+                        5、搭载球面出料阀，出料更彻彻底、稳定。
+
+                        技术参数：
+                        设备全容积0.3~30立方米
+                        每批次处理能力0.1~15立方米
+                        每批次处理物料0.1~20吨
+                    </div>
+                </div>
+                <div class="remark clearFix">
+                 <div class="top_title_r">
+                     <span>产品详情</span>
+                     <span>规格参数</span>
+                 </div>
+                    <div class="content_item">
+                        产品详情产品详情产品详情产品详情产品详情产品详情粉搅拌机可采用碳钢、锰钢、304不锈钢、316L不锈钢钢、321不锈钢以及其它材质的钢材定制，并且不同材质也可以结合使用；设备选材时区分：与物料接触部分以及非与物料接触部分；混合机内部还可以针对性增加如防腐、防粘结、隔离、耐磨等功能性的涂层或保护层；不锈钢表面处理分喷砂、拉丝、抛光、镜面等处理方式，并可分别应用于不同的使用部位；
+                        机体全部采用不锈钢制作；设备外表面精细抛光    2:机体全部采用不锈钢制作；设备表面喷砂处理       3:机体全部采用碳钢制作；设备外表面喷漆处理      4:机体采用与物料接触部分为不锈钢，其它碳钢制作
+                        二.可靠的驱动配置
+                        详情产品详情产品详情产品详情产品详情粉搅拌机可采用碳钢、锰钢、304不锈钢、316L不锈钢钢、321不锈钢以及其它材质的钢材定制，并且不同材质也可以结合使用；设备选材时区分：与物料接触部分以及非与物料接触部分；混合机内部还可以针对性增加如防腐、防粘结、隔离、耐磨等功能性的涂层或保护层；不锈钢表面处理分喷砂、拉丝、抛光、镜面等处理方式，并可分别应用于不同的使用部位；
+                        机体全部采用不锈钢
+                        详情产品详情产品详情产品详情产品详情粉搅拌机可采用碳钢、锰钢、304不锈钢、316L不锈钢钢、321不锈钢以及其它材质的钢材定制，并且不同材质也可以结合使用；设备选材时区分：与物料接触部分以及非与物料接触部分；混合机内部还可以针对性增加如防腐、防粘结、隔离、耐磨等功能性的涂层或保护层；不锈钢表面处理分喷砂、拉丝、抛光、镜面等处理方式，并可分别应用于不同的使用部位；
+                        机体全部采用不锈钢
+                        混合机根据物料性质、启动方式、以及工艺要求配置不同功率、不同能力的驱动装置。 双螺旋锥形混合机装载专用的双输出减速机
+
+                        <div class="tag">
+                            相关标签:
+                        </div>
+                        <div class="hot_city">
+                            热门城市:
+                        </div>
+                        <div class="next_prev">
+                            上一篇：<br/>
+                            下一篇：
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xg_pro">
+                <div class="top_title_xg">
+                    相关产品
+                </div>
+                <div class="bottom_pro">
+                    <ul class="clearFix">
+                        <li style="border: none">
+                            <a href="#">
+                                <img src="images/index_13.png" alt="">
+                            </a>
+                            <p><a href="#">粉料除粉料除尘尘</a></p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/index_13.png" alt="">
+                            </a>
+                            <p><a href="#">粉料除粉料除尘尘</a></p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/index_13.png" alt="">
+                            </a>
+                            <p><a href="#">粉料除粉料除尘尘</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="xg_news">
+                <div class="top_title_xg">
+                    相关新闻
+                </div>
+                <div class="lists_news" style="margin-top: 0">
+                    <ul class="content two">
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title"><a href="#">混料机给社会发展带来便利</a></p>
+                            <p class="info"><a href="#" style="color: #999;">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</a></p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('ul.type li').mouseenter(function () {
+            $(this).find('.sub_pro').css('display',"block");
+        })
+            .mouseleave(function () {
+                $(this).find('.sub_pro').css('display',"none");
+            })
+    })
+</script>
+
+<!--底部-->
+<div class="footer clearFix">
+    <div class="w">
+        <script>
+            $(function () {
+                $('.nav_bottom li:last').css('display','none');
+            })
+
+        </script>
+        <ul class="nav_bottom clearFix">
+            <li><a href="#">首页</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化剂</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+        </ul>
+        <div class="bottom_logo clearFix">
+            <p>联系人: 陈经理   &nbsp;&nbsp;手机: [field:phone]</p>
+            <p>电话: 0510-83390359  &nbsp;&nbsp;传真: 0510-83390359</p>
+            <p>邮箱: 419309846@qq.com</p>
+            <p>地址: 无锡市前洲工业园</p>
+        </div>
+        <div class="erweimas clearFix">
+            <img src="images/index_32.png" alt="">
+            <p>扫一扫</p>
+        </div>
+
+    </div>
+</div>
+<div class="bottom_f">
+    <div class="w">
+        <span>Copyright ? 2017 无锡市嘉隆设备科技有限公司 All Rights Reservrd 版权所有</span>
+        <img src="images/xrzc_03.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>
+

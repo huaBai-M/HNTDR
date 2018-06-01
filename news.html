@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <link rel="stylesheet" href="css/base_c.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jQuery/jquery1.42.min.js"></script>
+    <script src="lib/jQuery/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="lib/common.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<!--首页内容-->
+<!--头部-->
+<div class="top">
+    <div class="w">
+        <div class="left">
+            欢迎光临湖南天地融节能环保科技有限公司！
+        </div>
+        <div class="right">
+            <a href="###" style="cursor: inherit;"><img src="images/index_03.png" alt=""></a>
+            <a href="###" style="cursor: inherit;">40000-99990</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a href="#" class="log"><img src="images/index_07.png" alt=""></a>
+        <div class="nav">
+            <ul class="nav_first clearFix">
+
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir">
+                    <a href="#">产品名称</a>
+                    <ul>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                    </ul>
+                </li>
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir"><a href="#">产品名称</a></li>
+                <li class="fir"><a href="#">案例展示</a></li>
+                <li class="fir"><a href="#">关于我们</a></li>
+                <li class="fir"><a href="#">关于我们</a>
+                    <ul>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav_hide">
+    <div class="w">
+        <ul>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.nav_hide').hide();
+        $('.nav_first li.fir').find('span').css("display","none");
+        $('.nav_first li.fir').eq(0).find('span').css("display","block");
+        $('.nav_first li.fir').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $(this).find('span').css("display","block");
+            $('.nav_hide').stop().hide()
+        })
+            .mouseleave(function () {
+                $('.nav_first li.fir').find('span').css("display","none");
+                $('.nav_first li.fir').eq(0).find('span').css("display","block");
+            })
+        $('.nav_first li.fir').eq(2).mouseenter(function () {
+            $(this).find('ul').css('display','none');
+            $('.nav_hide').stop().show();
+
+        })
+        $('.nav_hide').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $('.nav_first li.fir').eq(2).find('span').css("display","block");
+        })
+        $('.nav_hide').mouseleave(function () {
+            $('.nav_hide').stop().hide();
+        })
+
+
+    })
+</script>
+
+<!--banner-->
+<div class="banner_about" style="background:url(images/news_banner_02.png);">
+    <div class="w">
+
+    </div>
+</div>
+<div class="search">
+    <div class="w">
+        <div class="left">
+            <span style="color: #333;font-size:16px;">热门关键词：</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">产品名称</a>
+        </div>
+        <div class="right">
+            <form  name="formSeach" id="formSeach" action="/seach/" onSubmit="Seach()">
+                <input type="text" name="k" size="25" class="cpkey" value="请输入关键词搜索"/>
+                <input type="image" class="image" onClick="doAdvancedSearchSubmit('')" value="" src="images/index_17.png" align="top" >
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="about_content clearFix">
+    <div class="w">
+        <div class="left_type">
+            <div class="l_t">
+                <div class="text_t">关于我们</div>
+                <div class="text_b"><span></span>ABOUT US<span></span></div>
+            </div>
+            <ul class="type">
+                <li class="clearFix"><a href="#"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a></li>
+                <li class="clearFix">
+                    <a href="#" class="clearFix"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a>
+                    <div class="sub_pro">
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                    </div>
+                </li>
+                <li class="clearFix"><a href="#"><img src="images/left_img_05.png" alt=""><span>关于我们</span></a></li>
+            </ul>
+            <div class="concat_b">
+                <div class="name_t">
+                    联系我们
+                    <div class="text_b"><span></span>CONCAT US<span></span></div>
+                </div>
+                <div class="content_b">
+                    <p>联系人: 陈经理</p>
+                    <p>手机: 15995250526</p>
+                    <p>电话: 0510-83390359</p>
+                    <p>传真: 0510-83390359</p>
+                    <p>邮箱: 419309846@qq.com</p>
+                    <p>地址: 无锡市前洲工业园无锡市前洲工业园无锡市前洲工业园无锡市前洲工业园</p>
+                </div>
+            </div>
+        </div>
+        <div class="right_lists">
+            <div class="top_pro">
+                <img src="images/home_05.png" alt="">&nbsp;<a href="">首页>产品中心</a>
+            </div>
+            <div class="news_a clearFix">
+                <div class="lists_news clearFix">
+                    <ul class="content clearFix">
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title"><a href="#">混料机给社会发展带来便利</a></p>
+                            <p class="info"><a href="#" style="color: #999;">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</a></p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                        <li>
+                            <a href="" class="data">
+                                <span class="day">12</span>
+                                <span class="year">2018-04</span>
+                            </a>
+                            <p class="title">混料机给社会发展带来便利</p>
+                            <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="page clearFix">
+                <ul class="pagelist">
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('ul.type li').mouseenter(function () {
+            $(this).find('.sub_pro').css('display',"block");
+        })
+            .mouseleave(function () {
+                $(this).find('.sub_pro').css('display',"none");
+            })
+    })
+</script>
+
+<!--底部-->
+<div class="footer clearFix">
+    <div class="w">
+        <script>
+            $(function () {
+                $('.nav_bottom li:last').css('display','none');
+            })
+
+        </script>
+        <ul class="nav_bottom clearFix">
+            <li><a href="#">首页</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化剂</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+            <li><a href="#">水性固化</a></li>
+            <li>|</li>
+        </ul>
+        <div class="bottom_logo clearFix">
+            <p>联系人: 陈经理   &nbsp;&nbsp;手机: [field:phone]</p>
+            <p>电话: 0510-83390359  &nbsp;&nbsp;传真: 0510-83390359</p>
+            <p>邮箱: 419309846@qq.com</p>
+            <p>地址: 无锡市前洲工业园</p>
+        </div>
+        <div class="erweimas clearFix">
+            <img src="images/index_32.png" alt="">
+            <p>扫一扫</p>
+        </div>
+
+    </div>
+</div>
+<div class="bottom_f">
+    <div class="w">
+        <span>Copyright ? 2017 无锡市嘉隆设备科技有限公司 All Rights Reservrd 版权所有</span>
+        <img src="images/xrzc_03.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>
+

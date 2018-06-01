@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <link rel="stylesheet" href="css/base_c.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jQuery/jquery1.42.min.js"></script>
+    <script src="lib/jQuery/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="lib/common.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<!--首页内容-->
+<!--头部-->
+<div class="top">
+    <div class="w">
+        <div class="left">
+            欢迎光临湖南天地融节能环保科技有限公司！
+        </div>
+        <div class="right">
+            <a href="###" style="cursor: inherit;"><img src="images/index_03.png" alt=""></a>
+            <a href="###" style="cursor: inherit;">40000-99990</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a href="#" class="log"><img src="images/index_07.png" alt=""></a>
+        <div class="nav">
+        <ul class="nav_first clearFix">
+
+            <li class="fir"><a href="#">产品名称</a></li>
+            <li class="fir">
+                <a href="#">产品名称</a>
+                <ul>
+                    <li><a href="#">一级分类</a></li>
+                    <li><a href="#">一级分类</a></li>
+                    <li><a href="#">一级分类</a></li>
+                </ul>
+            </li>
+            <li class="fir"><a href="#">产品名称</a></li>
+            <li class="fir"><a href="#">产品名称</a></li>
+            <li class="fir"><a href="#">案例展示</a></li>
+            <li class="fir"><a href="#">关于我们</a></li>
+            <li class="fir"><a href="#">关于我们</a>
+                <ul>
+                    <li><a href="#">一级分类</a></li>
+                    <li><a href="#">一级分类</a></li>
+                    <li><a href="#">一级分类</a></li>
+                </ul></li>
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="nav_hide">
+    <div class="w">
+        <ul>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#"><img src="images/index_11.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">DSH双螺旋锥形混合机</a></dt>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                    <dd><span></span><a href="#">DSH双螺旋锥形混合机</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.nav_hide').hide();
+        $('.nav_first li.fir').find('span').css("display","none");
+        $('.nav_first li.fir').eq(0).find('span').css("display","block");
+        $('.nav_first li.fir').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $(this).find('span').css("display","block");
+            $('.nav_hide').stop().hide()
+        })
+            .mouseleave(function () {
+                $('.nav_first li.fir').find('span').css("display","none");
+                $('.nav_first li.fir').eq(0).find('span').css("display","block");
+            })
+        $('.nav_first li.fir').eq(2).mouseenter(function () {
+            $(this).find('ul').css('display','none');
+            $('.nav_hide').stop().show();
+
+        })
+        $('.nav_hide').mouseenter(function () {
+            $('.nav_first li.fir').find('span').css("display","none");
+            $('.nav_first li.fir').eq(2).find('span').css("display","block");
+        })
+        $('.nav_hide').mouseleave(function () {
+            $('.nav_hide').stop().hide();
+        })
+
+
+    })
+</script>
+
+<!--banner-->
+<div class="banner">
+        <div id="slideBox" class="slideBox">
+            <div class="w">
+            <div class="hd">
+                <ul><li></li><li></li><li></li></ul>
+            </div>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <img src="images/index_14.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/index_14.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/index_14.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,delayTime:2000});
+        </script>
+</div>
+<div class="search">
+    <div class="w">
+       <div class="left">
+           <span style="color: #333;font-size:16px;">热门关键词：</span>
+           <a href="#">产品名称</a>
+           <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+           <a href="#">产品名称</a>
+           <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+           <a href="#">产品名称</a>
+           <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+           <a href="#">产品名称</a>
+       </div>
+        <div class="right">
+            <form  name="formSeach" id="formSeach" action="/seach/" onSubmit="Seach()">
+                <input type="text" name="k" size="25" class="cpkey" value="输入关键词搜索"/>
+                <input type="image" class="image" onClick="doAdvancedSearchSubmit('')" value="" src="images/index_17.png" align="top" >
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--产品-->
+<div class="pro_lists clearFix">
+    <div class="w">
+
+        <div class="title_a">
+            <div class="top_text">产品中心</div>
+            <div class="border1"></div>
+            <div class="bottom_text">PRODUCT CENTER</div>
+        </div>
+        <div class="left_type">
+            <div class="l_t">
+                <div class="text_t">产品中心</div>
+                <div class="text_b"><span></span>PRODUCT CENTER<span></span></div>
+            </div>
+            <ul class="type">
+                <li class="clearFix"><a href="#">关于我们</a></li>
+                <li class="clearFix">
+                    <a href="#" class="clearFix">关于我们</a>
+                    <!--<div class="sub_pro">-->
+                        <!--<a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>-->
+                        <!--<a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>-->
+                        <!--<a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>-->
+                        <!--<a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>-->
+                        <!--<a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>-->
+                    <!--</div>-->
+                </li>
+                <li class="clearFix"><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="right_lists">
+            <div class="bottom_pro">
+                <ul class="clearFix">
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/index_24.png" alt="">
+                        </a>
+                        <p><a href="#">粉料除粉料除尘尘</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner2">
+    <div class="w">
+        <div class="title_a">
+            <div class="top_text" style="color: #fff">关于我们</div>
+            <div class="border1" style="background-color:#fff;"></div>
+            <div class="bottom_text" style="color: #fff">ABOUT US</div>
+        </div>
+        <div class="content_about">
+            <img src="images/index_23.png" alt="">
+            <div class="left_info">
+                走进大门，首先映入我们眼帘的是“创世界名牌;做百年企业”10个大字。这既是企业最高追求，也是最核心的价值观。早在2005年，“董事长徐新建就掷地有声地宣告：“我们要争创世界名牌，做百年企业，做太阳能行业最受尊敬的品牌！
+                最受尊敬”有三个方面<br/>
+                一是建立标准。能够不断建立行业新标准，带动太阳能行业的整体发展；<br/>
+                二是总结模式。当今企业竞争的最高境界是模式的竞争，建立一套操作性强的盈利模式和管理模式是企业制胜的关键；<br/>
+                三是社会责任。企业仅追求经济效益的第一是远远不够的，能够为社会创造价值...
+            </div>
+            <div class="more">
+                <a href="#">查看更多</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cases_lists clearFix">
+    <div class="w">
+
+        <div class="title_a">
+            <div class="top_text">案例中心</div>
+            <div class="border1"></div>
+            <div class="bottom_text">CASE CENTER</div>
+        </div>
+        <ul class="bottom_case clearFix">
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_27.png" title="[productname]" alt="[productname]"></a>
+                <div class="name"><a href="#">绿色城镇定制方案</a></div>
+                <div class="descripton"><a href="#">我们设计的初衷结合党十八大提出的“新型城镇化”概念，通过绿色小镇ING定制方案采用自然落差式供水，太阳能配比空气能为辅助能源，通过家庭电站以最经济便利的方式满足家庭全天候洗浴生活用水...</a></div>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_27.png" title="[productname]" alt="[productname]"></a>
+                <div class="name"><a href="#">绿色城镇定制方案</a></div>
+                <div class="descripton"><a href="#">我们设计的初衷结合党十八大提出的“新型城镇化”概念，通过绿色小镇ING定制方案采用自然落差式供水，太阳能配比空气能为辅助能源，通过家庭电站以最经济便利的方式满足家庭全天候洗浴生活用水...</a></div>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_27.png" title="[productname]" alt="[productname]"></a>
+                <div class="name"><a href="#">绿色城镇定制方案</a></div>
+                <div class="descripton"><a href="#">我们设计的初衷结合党十八大提出的“新型城镇化”概念，通过绿色小镇ING定制方案采用自然落差式供水，太阳能配比空气能为辅助能源，通过家庭电站以最经济便利的方式满足家庭全天候洗浴生活用水...</a></div>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_27.png" title="[productname]" alt="[productname]"></a>
+                <div class="name"><a href="#">绿色城镇定制方案</a></div>
+                <div class="descripton"><a href="#">我们设计的初衷结合党十八大提出的“新型城镇化”概念，通过绿色小镇ING定制方案采用自然落差式供水，太阳能配比空气能为辅助能源，通过家庭电站以最经济便利的方式满足家庭全天候洗浴生活用水...</a></div>
+            </li>
+        </ul>
+        <div class="more">
+            <a href="#">查看更多</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--环境-->
+<div class="company">
+    <div class="w">
+        <div class="title_a">
+            <div class="top_text">公司环境</div>
+            <div class="border1"></div>
+            <div class="bottom_text">ENVIRONMENT</div>
+        </div>
+        <ul class="bottom_company clearFix">
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_31.png" title="[productname]" alt="[productname]"></a>
+                <p>公司环境</p>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_34.png" title="[productname]" alt="[productname]"></a>
+                <p>公司环境</p>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_36.png" title="[productname]" alt="[productname]"></a>
+                <p>公司环境</p>
+            </li>
+            <li>
+                <a href="[arcurl]" class="bottom"><img src="images/index_39.png" title="[productname]" alt="[productname]"></a>
+                <p>公司环境</p>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="news clearFix">
+    <div class="w">
+        <div class="title_a">
+            <div class="top_text">新闻中心</div>
+            <div class="border1"></div>
+            <div class="bottom_text">NEWS CENTER</div>
+        </div>
+        <div class="left clearFix">
+            <ul class="top_new clearFix">
+                <li><a href="#">新闻动态</a></li>
+                <li>/</li>
+                <li><a href="#">行业新闻</a></li>
+                <li class="right"><a href="#">MORE</a></li>
+            </ul>
+            <div class="lists_news clearFix">
+                <a class="img" href="#">
+                    <img src="images/index_24.png" alt="">
+                    <span>
+                        我们还需要了解哪些专业知识呢专业知识呢？
+                    </span>
+                </a>
+                <ul class="content">
+                    <li>
+                        <a href="" class="data">
+                            <span class="day">12</span>
+                            <span class="year">2018-04</span>
+                        </a>
+                        <p class="title"><a href="#">混料机给社会发展带来便利</a></p>
+                        <p class="info"><a href="#" style="color: #999;">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</a></p>
+                    </li>
+                    <li>
+                        <a href="" class="data">
+                            <span class="day">12</span>
+                            <span class="year">2018-04</span>
+                        </a>
+                        <p class="title">混料机给社会发展带来便利</p>
+                        <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                    </li>
+                    <li>
+                        <a href="" class="data">
+                            <span class="day">12</span>
+                            <span class="year">2018-04</span>
+                        </a>
+                        <p class="title">混料机给社会发展带来便利</p>
+                        <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+    </div>
+        <div class="right_news">
+            <div class="top_r">
+                <a href="#" class="first">常见问题</a>
+                <a href="#" class="more">MORE</a>
+            </div>
+            <ul class="content">
+                <li>
+                    <p class="title">混料机给社会发展带来便利</p>
+                    <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                </li>
+                <li>
+                    <p class="title">混料机给社会发展带来便利</p>
+                    <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                </li>
+                <li>
+                    <p class="title">混料机给社会发展带来便利</p>
+                    <p class="info">混料机给社会发展带混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利混料机给社会发展带来便利来便利混料机给社会发展带来便利</p>
+                </li>
+            </ul>
+        </div>
+</div>
+</div>
+
+
+<div class="link_y clearFix">
+    <div class="w">
+        <div class="link">友情链接： <span>百度</span>|&nbsp;&nbsp;<span>百度</span></div>
+        <div class="region">地区分站： <span>百度</span>|&nbsp;&nbsp;<span>百度</span></div>
+    </div>
+
+</div>
+<!--底部-->
+<div class="footer clearFix">
+<div class="w">
+    <script>
+        $(function () {
+          $('.nav_bottom li:last').css('display','none');
+        })
+
+    </script>
+    <ul class="nav_bottom clearFix">
+        <li><a href="#">首页</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化剂</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+        <li><a href="#">水性固化</a></li>
+        <li>|</li>
+    </ul>
+    <div class="bottom_logo clearFix">
+        <p>联系人: 陈经理   &nbsp;&nbsp;手机: [field:phone]</p>
+        <p>电话: 0510-83390359  &nbsp;&nbsp;传真: 0510-83390359</p>
+        <p>邮箱: 419309846@qq.com</p>
+        <p>地址: 无锡市前洲工业园</p>
+    </div>
+    <div class="erweimas clearFix">
+        <img src="images/index_46.png" alt="">
+        <p>扫一扫</p>
+    </div>
+
+</div>
+</div>
+<div class="bottom_f">
+<div class="w">
+<span>Copyright ? 2017 无锡市嘉隆设备科技有限公司 All Rights Reservrd 版权所有</span>
+    <img src="images/xrzc_03.png" alt="">
+</div>
+</div>
+
+</body>
+</html>
+
